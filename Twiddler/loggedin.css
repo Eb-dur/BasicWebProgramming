@@ -1,0 +1,13 @@
+#accountView {
+    display: none;
+
+}
+
+#browseView {
+    display: none;
+
+}
+
+#homeView {
+    display: block;
+}

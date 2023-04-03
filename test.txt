@@ -1,0 +1,12 @@
+{
+    "email": "m@gmail.com",
+    "password": "123456",
+    "fname": "Malte",
+    "lname": "Hammar",
+    "gender": "male",
+    "city": "Linkopng",
+    "country": "Sweden"
+
+}
+
+Authorization: gszvyugukouqvddpctmpiywrqcdidqla

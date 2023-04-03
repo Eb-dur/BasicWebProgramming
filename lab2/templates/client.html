@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='client.css') }}" type="text/css">
+    <script src="{{ url_for('static', filename='client.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='serverstub.js') }}" type="text/javascript"></script>
+    <script type="text/view" id="welcomeview">
+        <div id="welcomepage" class="welcomepage">
+            <div id="logo" class="logo">
+                <img id="logoimg" src="/static/images/wimage.png">
+            </div>
+            <div id="loginsignup" class="loginsignup">
+                <form id="loginform" class="login">
+                    <div>
+                        <label for="lemail">Email:</label>
+                        <input id="lemail" type="email" required><br>
+                    </div>
+                    <div>
+                        <label for="lpsw">Password:</label>
+                        <input id="lpsw" type="password" required><br>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="servermsg" id="lservermsg"></p>
+                        <input class="submit" id="loginbtn" type="submit" value="Login">
+                    </div>
+                </form>
+                <form id="signupform" class="signup">
+                    <div>
+                        <h2 id="signuphead">Sign up here</h2><br>
+                    </div>
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input id="fname" type="name" required><br>
+                    </div>
+                    <div>
+                        <label for="lname">Family Name:</label>
+                        <input id="lname" type="name" required><br>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input id="city" type="name" required><br>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <input id="country" type="name" required><br>
+                    </div>
+                    <div>
+                        <label for="semail">Email:</label>
+                        <input id="semail" type="email" required><br>
+                    </div>
+                    <div>
+                        <label for="spsw">Password:</label>
+                        <input id="spsw" type="password" required><br>
+                    </div>
+                    <div>
+                        <label for="rpsw">Repeat PSW:</label>
+                        <input id="rpsw" type="password" required><br>
+                    </div>
+                    <br>
+                    <div>
+                        <p class="servermsg" id="sservermsg"></p>
+                        <input class="submit" id="signupbtn" type="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </script>
+    <script id="profileView" type="text/view">
+        <div id="tabs">
+            <button class="tab" id="reload">Reload site</button>
+            <button class="tab" id="home">Home</button>
+            <button class="tab" id="browse">Browse</button>
+            <button class="tab" id="account">Account</button>
+    
+        </div>
+    
+        <div id="homeView">
+            <div id="userInfo">
+                <div>
+                    <label for="useremail">Email:</label>
+                    <p id="useremail"></p>
+                </div>
+                <div>
+                    <label for="userfname">First Name:</label>
+                    <p id="userfname"></p>
+                </div>
+                <div>
+                    <label for="userlname">Family Name:</label>
+                    <p id="userlname"></p>
+                </div>
+                <div>
+                    <label for="usergender">Gender:</label>
+                    <p id="usergender"></p>
+
+                </div>
+                <div>
+                    <label for="usercity">City:</label>
+                    <p id="usercity"></p>
+
+                </div>
+                <div>
+                    <label for="usercountry">Country:</label>
+                    <p id="usercountry"></p>
+                </div>
+            </div>
+
+            <div id="userPost">
+                <input id="userPostinput" type="text" placeholder="Message">
+                <button id="userPostbtn">Post</button>
+                <p id="postError"></p>
+            </div>
+            
+            <div id="userWall">
+                <ul id="userWallMessages"></ul>
+            </div>
+        </div>
+    
+        <div id="browseView">
+            <div id="userSearch">
+                <input id="searchEmail" type="email" placeholder="User Email" required>
+                <button id="searchEmailbtn">Find user</button>
+                <p id="searchError"></p>
+            </div>
+            <div id="profileInfo">
+                <div>
+                    <label for="profileemail">Email:</label>
+                    <p id="profileemail"></p>
+                </div>
+                <div>
+                    <label for="profilefname">First Name:</label>
+                    <p id="profilefname"></p>
+                </div>
+                <div>
+                    <label for="profilename">Family Name:</label>
+                    <p id="profilename"></p>
+                </div>
+                <div>
+                    <label for="profilegender">Gender:</label>
+                    <p id="profilegender"></p>
+    
+                </div>
+                <div>
+                    <label for="profilecity">City:</label>
+                    <p id="profilecity"></p>
+    
+                </div>
+                <div>
+                    <label for="profilecountry">Country:</label>
+                    <p id="profilecountry"></p>
+                </div>
+            </div>
+            <div id="profilePost">
+                <input id="profilePostInput" type="text" placeholder="Message">
+                <button id="profilePostbtn">Post to their wall</button>
+            </div>
+    
+            <div id="profileWall">
+                <ul id="profileWallMessages"></ul>
+            </div>
+    
+        </div>
+        
+        <div id="accountView">
+            <div>
+                <button id="signoutbtn">Sign out</button>
+            </div>
+            <form id="changepsw">
+                <div>
+                    <label for="oldpsw">Old Password:</label>
+                    <input id="oldpsw" type="password" required>
+                </div>
+                <div>
+                    <label for="npsw">New Password:</label>
+                    <input id="npsw" type="password" required>
+                </div>
+                <div>
+                    <label for="rnpsw">Repeat New Password:</label>
+                    <input id="rnpsw" type="password" required>
+                </div>
+                <div>
+                    <p id="changepswmsg"></p>
+                    <button id="changepswbtn" type="submit">Change password</button>
+
+                </div>
+            </form>
+        </div>
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

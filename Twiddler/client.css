@@ -1,0 +1,195 @@
+/* Welcome View*/
+.welcomepage {
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.logo {
+    border: 1px solid;
+    width: 340px;
+    height: 400px;
+    display: inline-block;
+}
+
+.loginsignup {
+    float: right;
+    height: 400px;
+    width: 250px;
+    display: inline-block;
+}
+
+select {
+    float: right;
+    width: 149px;
+}
+
+#loginform div {
+    white-space: normal;
+    padding: 3px;
+    display: inline-block;
+    width: 95%;
+    height: 25%;
+}
+
+#signupform div {
+    white-space: nowrap;
+    padding: 3px;
+    display: inline-block;
+    width: 95%;
+    height: 8%;
+}
+
+.login {
+    width: inherit;
+    display: inline-block;
+    border: 1px solid;
+    height: 20%;
+    margin-block-end: 10px;
+}
+
+.signup {
+    display: inline-block;
+    border: 1px solid;
+    height: 77%;
+    width: inherit;
+}
+
+form label {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin: auto;
+    font-size: 15px;
+}
+
+form input {
+    float: right;
+    width: 149px;
+}
+
+
+
+#signuphead {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.servermsg {
+    width: 71%;
+    color: red;
+    font-style: italic;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.submit {
+    float: right;
+    width: auto;
+    display: inline-block;
+}
+
+/*Logged in View*/
+#tabs button {
+    border: 0ch;
+    height: 25px;
+    width: auto;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+#accountView {
+    display: none;
+    border: 1px solid;
+    margin: 0 auto;
+    width: 350px;
+    padding: 5px;
+}
+
+#accountView input {
+    display: inline-block;
+}
+
+#accountView label {
+    display: inline-block;
+    text-align: right;
+}
+
+#accountView div {
+    margin: 10px;
+}
+
+#changepswmsg{
+    display: inline-block;
+    color: red;
+
+}
+
+#changepswbtn{
+    position: relative;
+    top: 10px;
+    float: right;
+    display: inline-block;
+
+}
+
+
+#browseView {
+    display: none;
+    border: 1px solid;
+    margin: 0 auto;
+    width: 600px;
+    padding: 5px;
+}
+
+
+#browseView div {
+    margin: 10px;
+}
+
+#browseView label {
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#browseView p {
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#searchError{
+    color: red;
+
+}
+#homeView {
+    display: block;
+    border: 1px solid;
+    margin: 0 auto;
+    width: 600px;
+    padding: 5px;
+}
+
+
+#homeView label {
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#homeView p {
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#postError {
+    color: red;
+
+}

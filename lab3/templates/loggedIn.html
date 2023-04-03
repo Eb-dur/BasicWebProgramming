@@ -1,0 +1,122 @@
+<head>
+    <link rel="stylesheet" href="loggedin.css" type="text/css">
+</head>
+
+<body>
+    <div id="tabs">
+        <button class="tab" id="reaload">Reload site</button>
+        <button class="tab" id="home">Home</button>
+        <button class="tab" id="browse">Browse</button>
+        <button class="tab" id="account">Account</button>
+
+    </div>
+
+    <div id="homeView">
+        <div>
+            <div id="userInfo">
+                <div>
+                    <label for="userfname">First Name:</label>
+                    <p id="userfname"></p>
+                </div>
+                <div>
+                    <label for="username">Family Name:</label>
+                    <p id="username"></p>
+                </div>
+                <div>
+                    <label for="usergender">Gender:</label>
+                    <p id="usergender"></p>
+
+                </div>
+                <div>
+                    <label for="usercity">City:</label>
+                    <p id="usercity"></p>
+
+                </div>
+                <div>
+                    <label for="usercountry">Country:</label>
+                    <p id="usercountry"></p>
+                </div>
+                <div>
+                    <label for="useremail">Email:</label>
+                    <p id="useremail"></p>
+                </div>
+            </div>
+
+            <div id="userPost">
+                <input id="userPostinput" type="text">
+                <button id="userPostbtn" >Post</button>
+            </div>
+            
+            <div id="userWall">
+                <ul id="userWallMessages"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="browseView">
+
+        <div id="userSearch">
+            <input type="email" placeholder="User Email" required>
+            <button>Find user</button>
+        </div>
+        <div id="profileInfo">
+            <div>
+                <label for="profilefname">First Name:</label>
+                <p id="profilefname"></p>
+            </div>
+            <div>
+                <label for="profilename">Family Name:</label>
+                <p id="profilename"></p>
+            </div>
+            <div>
+                <label for="profilegender">Gender:</label>
+                <p id="profilegender"></p>
+
+            </div>
+            <div>
+                <label for="profilecity">City:</label>
+                <p id="profilecity"></p>
+
+            </div>
+            <div>
+                <label for="profilecountry">Country:</label>
+                <p id="profilecountry"></p>
+            </div>
+            <div>
+                <label for="profileemail">Email:</label>
+                <p id="profileemail"></p>
+            </div>
+        </div>
+        <div id="profilePost">
+            <input type="text">
+            <button>Post to their wall</button>
+        </div>
+
+        <div id="profileWall">
+            <ul></ul>
+        </div>
+
+    </div>
+    
+    <div id="accountView">
+        <button id="signoutbtn">Sign out</button>
+        <form id="changepsw">
+            <div>
+                <label for="oldpsw">Old Password:</label>
+                <input id="oldpsw" type="password" required>
+            </div>
+            <div>
+                <label for="npsw">New Password:</label>
+                <input id="npsw" type="password" required>
+            </div>
+            <div>
+                <label for="rnpsw">Repeat New Password:</label>
+                <input id="rnpsw" type="password" required>
+            </div>
+            <div>
+                <button id="changepswbtn" type="submit">Change password</button>
+            </div>
+        </form>
+    </div>
+</body>
